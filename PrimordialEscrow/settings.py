@@ -113,7 +113,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+          'DIRS': [
+             os.path.join(BASE_DIR,'frontend/build')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -188,7 +190,7 @@ django_heroku.settings(locals())
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-  # BASE_DIR / 'frontend/build/static'
+   BASE_DIR / 'frontend/build/static'
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

@@ -13,7 +13,7 @@ function HistoryScreen({ history }) {
 
  
     const [message, setMessage] = useState('')
-    cont [email, setEmail] = useState("")
+    const [email, setEmail] = useState("")
     const dispatch = useDispatch()
 
   
@@ -32,7 +32,7 @@ function HistoryScreen({ history }) {
             history.push('/login')}
       
     }, [dispatch,history,userInfo,])
-
+/*
     const submitHandler = ()=>{
         e.preventDefault()
         emailjs.sendForm(`email`,
@@ -43,6 +43,7 @@ function HistoryScreen({ history }) {
             alert("an error occured,please try again")
         })
     }
+    */
 
     return (
         <Row>
@@ -81,7 +82,7 @@ function HistoryScreen({ history }) {
 
             <Col md={5}>
             <h4 > contact us</h4>
-             <Form onSubmit={submitHandler}>
+             <Form onSubmit="">
                     <Form.Group controlId="email">
                         <Form.Label>Contact us</Form.Label>
                         <Form.Control
