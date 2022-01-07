@@ -49,7 +49,7 @@ function RegisterScreen({location,history}) {
     return (
         <FormContainer>
 
-            <h1>Register</h1>
+            <h1>Welcome, please enter vaild details in order to register your account.</h1>
             {error && <Message variant="danger">{error}</Message>}
         {loading && <Loader/>}
         
@@ -107,7 +107,7 @@ function RegisterScreen({location,history}) {
              </Form>
              <Row className="py-3">
                 <Col>
-                    Already have ancount? <Link  to="/login">Login</Link>
+                    Already have account? <Link  to="/login">Click here to Login</Link>
                 </Col>
             </Row>
         </FormContainer>

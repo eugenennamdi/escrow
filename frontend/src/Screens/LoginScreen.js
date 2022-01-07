@@ -42,7 +42,7 @@ function LoginScreen({history,location}) {
                 <FormContainer>
 
                     
-                <h1>Sign In</h1>
+                <h1>Welcome to Primodial Escrow Services, please proceed to sign-in with your email address and password</h1>
 
                 
             {error && <Message variant="danger">Incorrect Password or username</Message>}
@@ -53,10 +53,10 @@ function LoginScreen({history,location}) {
     
                 <Form onSubmit={submitHandler}>
                     <Form.Group controlId="email">
-                        <Form.Label>UserName</Form.Label>
+                        <Form.Label>E-mail Address</Form.Label>
                         <Form.Control
                         type="email"
-                        placeholder="Enter your username here"
+                        placeholder="Enter your email here"
                         value={email} 
                         onChange={(e)=>setEmail(e.target.value)}
                         ></Form.Control>
@@ -77,7 +77,7 @@ function LoginScreen({history,location}) {
                 </Form>
                 <Row className="py-3">
                     <Col>
-                        New Customer? <Link  to={'/register'}>Register</Link>
+                        New Customer? <Link  to={'/register'}> Click here to Register</Link>
                     </Col>
                 </Row>
                 </FormContainer>

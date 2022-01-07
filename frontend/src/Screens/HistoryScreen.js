@@ -20,6 +20,7 @@ function HistoryScreen({ history }) {
 
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo } = userLogin
+    
 
     
 
@@ -58,7 +59,7 @@ function HistoryScreen({ history }) {
                                         <th>Amount</th>
                                         <th>Reference</th>
                                         <th>Account Number</th>
-                                        <th>AccountName</th>
+                                        <th>Account Name</th>
                                         <th>Status</th>
                                     
                                     </tr>
@@ -67,12 +68,12 @@ function HistoryScreen({ history }) {
                                 <tbody>
                                     
                                         <tr >
-                                            <td>{userInfo.username}</td>
+                                            <td>{userInfo?.username}</td>
                                             <td>$100,000</td>
                                             <td>ygyry</td>
                                             <td>HBUK4017264178610USD</td>
                                             <td>Helium Accounting Service</td>
-                                            <td>Pendin</td>
+                                            <td>Pending</td>
                                         </tr>
                                 
                                 </tbody>

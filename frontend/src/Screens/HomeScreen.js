@@ -25,7 +25,9 @@ function HomeScreen({history}) {
             
                 <>
                     
-            <div>
+            <div style={{ 
+                backgroundImage: `url("https://via.placeholder.com/500")` 
+             }}>
                 <Row>
                     
                     

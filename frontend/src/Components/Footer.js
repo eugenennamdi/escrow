@@ -12,7 +12,7 @@ function Footer() {
                 
                 <Row>
                 <appBar/>
-                <Col className="text-center py-3">Copyright &copy;</Col>
+                <Col className="text-center py-3">Copyright &copy; PRIMODIAL ESCROW SERVICES</Col>
                 </Row>
             </Container>
             

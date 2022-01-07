@@ -15,7 +15,7 @@ function Header({history}) {
 
     const Logout = ()=>{
         dispatch(logout())
-        history.push('/')
+        
        
 
     }
@@ -25,7 +25,7 @@ function Header({history}) {
                 <Navbar  bg="dark" variant="dark"expand="lg" collapseOnSelect>
                     <Container>
                     <LinkContainer to='/'>
-                    <Navbar.Brand>Promordial Escrow services</Navbar.Brand>
+                    <Navbar.Brand>PRIMODIAL ESCROW SERVICES</Navbar.Brand>
                     </LinkContainer>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -42,7 +42,7 @@ function Header({history}) {
 
                                     </NavDropdown> 
                                 ): <LinkContainer to='/login'>
-                                <Nav.Link><i className="fas fa-user"></i>Login</Nav.Link>
+                                <Nav.Link><i className="fas fa-user"></i></Nav.Link>
                             </LinkContainer>}
                             {!userInfo && (
                                 <LinkContainer to='/login'>
@@ -53,7 +53,7 @@ function Header({history}) {
 
                           {!userInfo && (
                                 <LinkContainer to='/register'>
-                                <Nav.Link><FaUser style={{margin: "5"}}/>sign up</Nav.Link>
+                                <Nav.Link><FaUser style={{margin: "5"}}/>Sign up</Nav.Link>
                             </LinkContainer>
                             )}
                           

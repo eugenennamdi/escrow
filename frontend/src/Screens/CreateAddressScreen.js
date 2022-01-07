@@ -51,7 +51,7 @@ function CreateAddrressScreen({location,history}) {
     return (
         <FormContainer>
 
-            <h1>Add Address</h1>
+            <h1>Please, fill the form below</h1>
             {error && <Message variant="danger">{error}</Message>}
         {loading && <Loader/>}
         
@@ -61,11 +61,11 @@ function CreateAddrressScreen({location,history}) {
             
              <Form onSubmit={submitHandler}>
              <Form.Group controlId="tel">
-                    <Form.Label>Phone</Form.Label>
+                    <Form.Label>Phone Number</Form.Label>
                     <Form.Control
                     required
                     type="number"
-                    placeholder="mobile number"
+                    placeholder="Enter your phone number"
                     value={phone} 
                     onChange={(e)=>setPhone(e.target.value)}
                     ></Form.Control>
@@ -86,7 +86,7 @@ function CreateAddrressScreen({location,history}) {
                     <Form.Control
                     required
                     type="text"
-                    placeholder="country"
+                    placeholder=""
                     value={country} 
                     onChange={(e)=>setCountry(e.target.value)}
                     ></Form.Control>
@@ -97,7 +97,7 @@ function CreateAddrressScreen({location,history}) {
                     <Form.Control
                     required
                     type="text"
-                    placeholder="state"
+                    placeholder=""
                     value={state} 
                     onChange={(e)=>setState(e.target.value)}
                     ></Form.Control>
@@ -108,7 +108,7 @@ function CreateAddrressScreen({location,history}) {
                     <Form.Control
                     required
                     type="text"
-                    placeholder="City"
+                    placeholder=""
                     value={city} 
                     onChange={(e)=>setCity(e.target.value)}
                     ></Form.Control>
@@ -119,7 +119,7 @@ function CreateAddrressScreen({location,history}) {
                     <Form.Control
                     required
                     type="text"
-                    placeholder="postal code"
+                    placeholder="Enter your postal code"
                     value={postalCode} 
                     onChange={(e)=>setPostalCode(e.target.value)}
                     ></Form.Control>
@@ -130,13 +130,13 @@ function CreateAddrressScreen({location,history}) {
                     <Form.Control
                     required
                     type="text"
-                    placeholder="postal code"
+                    placeholder="Input your account number"
                     value={accountNumber} 
                     onChange={(e)=>setAccountNumber(e.target.value)}
                     ></Form.Control>
                 </Form.Group>
                 
-                <Button type="submit" variant="primary"  >Sign Up</Button>
+                <Button type="submit" variant="primary"  >SUBMIT FORM</Button>
                 </Form.Group>
 
              </Form>

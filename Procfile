@@ -1,1 +1,1 @@
-web: gunicorn milestonebackend.wsgi --log-file - 
+web: gunicorn PrimordialEscrow.wsgi 
