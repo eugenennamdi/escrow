@@ -57,6 +57,7 @@ function HistoryScreen({ history }) {
                                     <tr>
                                         <th>User</th>
                                         <th>Amount</th>
+                                        <th>Charge Fees</th>
                                         <th>Payment Type</th>
                                         <th>Account Number</th>
                                         <th>Account Name</th>
@@ -70,7 +71,8 @@ function HistoryScreen({ history }) {
                                         <tr >
                                             <td>{userInfo?.username}</td>
                                             <td>$100,000</td>
-                                            <td>ygyry</td>
+                                            <td>$490</td>
+                                            <td>Wire Transfer</td>
                                             <td>HBUK4017264178610USD</td>
                                             <td>Helium Accounting Service</td>
                                             <td>Pending</td>
