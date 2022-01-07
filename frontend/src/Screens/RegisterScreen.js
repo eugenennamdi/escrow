@@ -91,7 +91,7 @@ function RegisterScreen({location,history}) {
                 </Form.Group>
 
                 <Form.Group controlId="confirmPassword">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>Re-Enter Password</Form.Label>
                     <Form.Control
                     required
                     type="password"

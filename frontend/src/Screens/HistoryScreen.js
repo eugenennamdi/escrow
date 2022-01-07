@@ -55,9 +55,9 @@ function HistoryScreen({ history }) {
                             <Table striped responsive className='table-sm'>
                                 <thead>
                                     <tr>
-                                        <th>user</th>
+                                        <th>User</th>
                                         <th>Amount</th>
-                                        <th>Reference</th>
+                                        <th>Payment Type</th>
                                         <th>Account Number</th>
                                         <th>Account Name</th>
                                         <th>Status</th>
@@ -82,13 +82,13 @@ function HistoryScreen({ history }) {
             </Col>
 
             <Col md={5}>
-            <h4 > contact us</h4>
+            <h4 > </h4>
              <Form onSubmit="">
                     <Form.Group controlId="email">
-                        <Form.Label>Contact us</Form.Label>
+                        <Form.Label>COMPLAINT</Form.Label>
                         <Form.Control
                         type="text"
-                        placeholder="Enter your username here"
+                        placeholder="File your complaint here"
                         value={email} 
                         onChange={(e)=>setEmail(e.target.value)}
                         ></Form.Control>
@@ -96,7 +96,7 @@ function HistoryScreen({ history }) {
     
     
                     
-                    <Button type="submit" variant="primary">message</Button>
+                    <Button type="submit" variant="primary">Message</Button>
     
                 </Form>
 
